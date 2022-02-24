@@ -1,0 +1,11 @@
+a:hover{
+    cursor: pointer;
+}
+.fa:hover{
+    cursor: pointer;
+    color: blue;
+    
+}
+#generateCV:hover{
+    cursor: pointer;
+}
