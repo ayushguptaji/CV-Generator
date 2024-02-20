@@ -27,132 +27,132 @@ $(document).ready(function () {
   $("#moreSocialMedia").click(function () {
     $(
       `<div class="socialMedia card p-2 sadow-sm mt-2">
-      <div class="text-end">
-      <a class="fa fa-trash" onclick="remove(this)"></a></div>
-      <input type="text" class="socialMediaWeb form-control mt-2" placeholder="Enter Name Of Social Media Website">
-      <input type="text" class="socialMediaLink form-control mt-2" placeholder="Enter Your Profile Link">
-      </div>`
+        <div class="text-end">
+        <a class="fa fa-trash" onclick="remove(this)"></a></div>
+        <input type="text" class="socialMediaWeb form-control mt-2" placeholder="Enter Name Of Social Media Website">
+        <input type="text" class="socialMediaLink form-control mt-2" placeholder="Enter Your Profile Link">
+        </div>`
     ).appendTo("#addSocialMedia");
   });
 
   //adding more Work Experience field
   $("#moreWorkExperience").click(function () {
     $(`<div class="workExperience card p-2 shadow-sm mt-2">
-    <div class="text-end">
-      <a class="fa fa-trash" onclick="remove(this)"></a></div>
-    <label for="jobTitle" class="form-label mt-2">Job Title</label>
-    <input type="text" class="jobTitle form-control" placeholder="Enter Your Job Title" />
-    <label for="organizationName" class="form-label mt-2">Organization Name</label>
-    <input
-      type="text"
-      class="organizationName form-control"
-      placeholder="Enter Your Organization Name"
-    />
-    <label for="jobDuration" class="form-label mt-2">Job Duration</label>
-    <div class="input-group">
+      <div class="text-end">
+        <a class="fa fa-trash" onclick="remove(this)"></a></div>
+      <label for="jobTitle" class="form-label mt-2">Job Title</label>
+      <input type="text" class="jobTitle form-control" placeholder="Enter Your Job Title" />
+      <label for="organizationName" class="form-label mt-2">Organization Name</label>
       <input
         type="text"
-        class="jobDurationFrom form-control"
-        placeholder="Enter Your Job Joining Year"
-      /><span class="input-group-text">-</span
-      ><input
-        type="text"
-        class="jobDurationTo form-control"
-        placeholder="Enter Your Job Ending Year"
+        class="organizationName form-control"
+        placeholder="Enter Your Organization Name"
       />
-    </div>
-    <label for="jobDescription" class="form-label mt-2">Job Description</label>
-    <textarea
-      type="text"
-      class="jobDescription form-control"
-      placeholder="Enter Your Job Experience"
-    ></textarea>
-  </div>`).appendTo("#addWorkExperience");
+      <label for="jobDuration" class="form-label mt-2">Job Duration</label>
+      <div class="input-group">
+        <input
+          type="text"
+          class="jobDurationFrom form-control"
+          placeholder="Enter Your Job Joining Year"
+        /><span class="input-group-text">-</span
+        ><input
+          type="text"
+          class="jobDurationTo form-control"
+          placeholder="Enter Your Job Ending Year"
+        />
+      </div>
+      <label for="jobDescription" class="form-label mt-2">Job Description</label>
+      <textarea
+        type="text"
+        class="jobDescription form-control"
+        placeholder="Enter Your Job Experience"
+      ></textarea>
+    </div>`).appendTo("#addWorkExperience");
   });
 
   //adding more Academic Qualificaion field
   $("#moreAcademicQualification").click(function () {
     $(`<div class="academicQualification card p-2 shadow-sm mt-2">
-    <div class="text-end">
-      <a class="fa fa-trash" onclick="remove(this)"></a></div>
-    <label for="institueName" class="form-label mt-2">Institute Name</label>
-    <input
-      type="text"
-      class="instituteName form-control"
-      placeholder="Enter Your Institute Name"
-    />
-    <label for="instituteLocation"  class="form-label mt-2">Location</label>
-    <input
-      type="text"
-      class="instituteLocation form-control"
-      placeholder="Enter Your Institute Location"
-    />
-    <label for="degreeName" class="form-label mt-2">Degree Name</label>
-    <input
-      type="text"
-      class="degreeName form-control"
-      placeholder="Enter Your Degree Name"
-    />
-    <label for="academicCompletion" class="form-label mt-2">Completed On</label>
-    <input
-      type="text"
-      class="academicCompletion form-control"
-      placeholder="Enter Completion Year or Expected Completion Year"
-    />
-    <label for="academicResult" class="form-label mt-2">Result</label>
-    <div class="input-group">
+      <div class="text-end">
+        <a class="fa fa-trash" onclick="remove(this)"></a></div>
+      <label for="institueName" class="form-label mt-2">Institute Name</label>
       <input
         type="text"
-        class="academicResult form-control"
-        placeholder="Result in GPA/CGPA/Percent"
+        class="instituteName form-control"
+        placeholder="Enter Your Institute Name"
       />
-
-      <select class="grade" class="form-select">
-        <option value="" disabled selected>Select One</option>
-        <option value="GPA">GPA</option>
-        <option value="CGPA">CGPA</option>
-        <option value="%">%</option>
-      </select>
-    </div>
-  </div>`).appendTo("#addAcademicQualification");
+      <label for="instituteLocation"  class="form-label mt-2">Location</label>
+      <input
+        type="text"
+        class="instituteLocation form-control"
+        placeholder="Enter Your Institute Location"
+      />
+      <label for="degreeName" class="form-label mt-2">Degree Name</label>
+      <input
+        type="text"
+        class="degreeName form-control"
+        placeholder="Enter Your Degree Name"
+      />
+      <label for="academicCompletion" class="form-label mt-2">Completed On</label>
+      <input
+        type="text"
+        class="academicCompletion form-control"
+        placeholder="Enter Completion Year or Expected Completion Year"
+      />
+      <label for="academicResult" class="form-label mt-2">Result</label>
+      <div class="input-group">
+        <input
+          type="text"
+          class="academicResult form-control"
+          placeholder="Result in GPA/CGPA/Percent"
+        />
+  
+        <select class="grade" class="form-select">
+          <option value="" disabled selected>Select One</option>
+          <option value="GPA">GPA</option>
+          <option value="CGPA">CGPA</option>
+          <option value="%">%</option>
+        </select>
+      </div>
+    </div>`).appendTo("#addAcademicQualification");
   });
 
   //adding more Project field
   $("#moreProject").click(function () {
     $(`<div class="project card p-2 shadow-sm mt-2">
-    <div class="text-end">
-      <a class="fa fa-trash" onclick="remove(this)"></a></div>
-    <label for="projectName" class="form-label mt-2">Project Name</label>
-    <input type="text" class="projectName form-control"  placeholder="Enter Your Project Name">
-    <label for="projectYear" class="form-label mt-2">Project Year</label>
-    <input type="text" class="projectYear form-control" placeholder="Enter Project Completion Year">
-    <label for="projectDescription" class="form-label mt-2">Project Description</label>
-    <textarea type="text" class="projectDescription form-control"  placeholder="Enter Project Description"></textarea>
-    <label for="linkToProject" class="form-label mt-2">Link To The Project (Optional)</label>
-    <input type="text" class="linkToProject form-control" placeholder="Enter Link To The Project">
-    </div>`).appendTo("#addProject");
+      <div class="text-end">
+        <a class="fa fa-trash" onclick="remove(this)"></a></div>
+      <label for="projectName" class="form-label mt-2">Project Name</label>
+      <input type="text" class="projectName form-control"  placeholder="Enter Your Project Name">
+      <label for="projectYear" class="form-label mt-2">Project Year</label>
+      <input type="text" class="projectYear form-control" placeholder="Enter Project Completion Year">
+      <label for="projectDescription" class="form-label mt-2">Project Description</label>
+      <textarea type="text" class="projectDescription form-control"  placeholder="Enter Project Description"></textarea>
+      <label for="linkToProject" class="form-label mt-2">Link To The Project (Optional)</label>
+      <input type="text" class="linkToProject form-control" placeholder="Enter Link To The Project">
+      </div>`).appendTo("#addProject");
   });
 
   //adding more Achievement field
   $("#moreAchievement").click(function () {
     $(`<div class="achievement card p-2 shadow-sm mt-2">
-    <div class="text-end">
-      <a class="fa fa-trash" onclick="remove(this)"></a></div>
-    <label for="achievementName" class="form-label mt-2">Achievement Name</label>
-    <input type="text" class="achievementName form-control"  placeholder="Enter Your Achievement Name">
-    <label for="achievementDescription" class="form-label mt-2">Achievement Description</label>
-    <textarea type="text" class="achievementDescription form-control"  placeholder="Enter Achievement Description"></textarea>
-    <label for="linkToAchievement" class="form-label mt-2">Link To The Achievement Certificate (Optional)</label>
-    <input type="text" class="form-control linkToAchievement"  placeholder="Enter Link To The Achievement Certificate">
-    </div>`).appendTo("#addAchievement");
+      <div class="text-end">
+        <a class="fa fa-trash" onclick="remove(this)"></a></div>
+      <label for="achievementName" class="form-label mt-2">Achievement Name</label>
+      <input type="text" class="achievementName form-control"  placeholder="Enter Your Achievement Name">
+      <label for="achievementDescription" class="form-label mt-2">Achievement Description</label>
+      <textarea type="text" class="achievementDescription form-control"  placeholder="Enter Achievement Description"></textarea>
+      <label for="linkToAchievement" class="form-label mt-2">Link To The Achievement Certificate (Optional)</label>
+      <input type="text" class="form-control linkToAchievement"  placeholder="Enter Link To The Achievement Certificate">
+      </div>`).appendTo("#addAchievement");
   });
 
   //adding more Skill field
   $("#moreSkill").click(function () {
     $(
       `<div>
-      <div class="input-group"><input type="text" class="skillName form-control mt-2"  placeholder="Enter Skill Name"><a class="fa fa-trash input-group-text mt-2 pt-2" onclick="remove(this)"></a> 
-      </div></div>`
+        <div class="input-group"><input type="text" class="skillName form-control mt-2"  placeholder="Enter Skill Name"><a class="fa fa-trash input-group-text mt-2 pt-2" onclick="remove(this)"></a> 
+        </div></div>`
     ).appendTo("#addSkill");
   });
 
@@ -199,7 +199,7 @@ $(document).ready(function () {
       $("#cvSocial").append(`<div class="navbar-brand">${
         $(".socialMediaWeb")[i].value
       }</div>
-          <div><a href="${$(".socialMediaLink")[i].value}">${
+            <div><a href="${$(".socialMediaLink")[i].value}">${
         $(".socialMediaLink")[i].value
       } </a></div>`);
     }
@@ -215,7 +215,7 @@ $(document).ready(function () {
       }: </span>${$(".academicCompletion")[i].value} (${
         $(".instituteName")[i].value
       }, ${$(".instituteLocation")[i].value})</div>
-            <div>Result: ${$(".academicResult")[i].value} ${
+              <div>Result: ${$(".academicResult")[i].value} ${
         $(".grade")[i].value
       }</div></li>`);
     }
@@ -228,7 +228,7 @@ $(document).ready(function () {
       }: </span>${$(".jobDurationFrom")[i].value}-${
         $(".jobDurationTo")[i].value
       } (${$(".organizationName")[i].value})</div>
-        <div>${$(".jobDescription")[i].value}</div></li>`);
+          <div>${$(".jobDescription")[i].value}</div></li>`);
     }
 
     //project
@@ -240,12 +240,12 @@ $(document).ready(function () {
         }:</span>${$(".projectYear")[i].value} (<a href="">${
           $(".linkToProject")[i].value
         }</a>)</div>
-        <div>${$(".projectDescription")[i].value}</div></li>`);
+          <div>${$(".projectDescription")[i].value}</div></li>`);
       } else {
         $("#cvProject").append(`<li><div><span class="navbar-brand">${
           $(".projectName")[i].value
         }:</span>${$(".projectYear")[i].value}</div>
-        <div>${$(".projectDescription")[i].value}</div></li>`);
+          <div>${$(".projectDescription")[i].value}</div></li>`);
       }
     }
 
@@ -258,12 +258,12 @@ $(document).ready(function () {
         }</span> (<a href="${$(".linkToAchievement")[i].value}">${
           $(".linkToAchievement")[i].value
         }</a>)</div>
-        <div>${$(".achievementDescription")[i].value}</div></li>`);
+          <div>${$(".achievementDescription")[i].value}</div></li>`);
       } else {
         $("#cvAchievement").append(`<li><div><span class="navbar-brand">${
           $(".achievementName")[i].value
         }</div>
-        <div>${$(".achievementDescription")[i].value}</div></li>`);
+          <div>${$(".achievementDescription")[i].value}</div></li>`);
       }
     }
 
