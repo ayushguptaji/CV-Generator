@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Generator</title>
-    
+
     <!-- JQuery-->
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
@@ -29,10 +29,15 @@
     ></script>
 
     <!-- Font Awsome-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
     <!-- Custom CSS-->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
 
     <!-- Custom JavaScript -->
     <script src="index.js"></script>
@@ -87,9 +92,16 @@
             <hr />
 
             <div class="fs-5 mt-3 mb-2">Academic Qualification</div>
-            <div id="addAcademicQualification" class="removeAcademicQualification">
+            <div
+              id="addAcademicQualification"
+              class="removeAcademicQualification"
+            >
               <div class="form-check mt-2">
-                <input class="form-check-input me-2" type="checkbox" onclick="removeField(this)">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  onclick="removeField(this)"
+                />
                 If you want to remove this field from your CV, tick the box
               </div>
               <div class="academicQualification card p-2 shadow-sm">
@@ -155,7 +167,11 @@
             <div class="fs-5 mt-3 mb-2">Work Experience</div>
             <div id="addWorkExperience" class="removeWorkExperience">
               <div class="form-check mt-2">
-                <input class="form-check-input me-2" type="checkbox" onclick="removeField(this)">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  onclick="removeField(this)"
+                />
                 If you want to remove this field from your CV, tick the box
               </div>
               <div class="workExperience card p-2 shadow-sm">
@@ -201,7 +217,11 @@
             <div class="fs-5 mt-3 mb-2">Projects</div>
             <div id="addProject" class="removeProject">
               <div class="form-check mt-2">
-                <input class="form-check-input me-2" type="checkbox" onclick="removeField(this)">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  onclick="removeField(this)"
+                />
                 If you want to remove this field from your CV, tick the box
               </div>
               <div class="project card p-2 shadow-sm">
@@ -240,7 +260,11 @@
             <div class="fs-5 mt-3 mb-2">Achievements</div>
             <div id="addAchievement" class="removeAchievement">
               <div class="form-check mt-2">
-                <input class="form-check-input me-2" type="checkbox" onclick="removeField(this)">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  onclick="removeField(this)"
+                />
                 If you want to remove this field from your CV, tick the box
               </div>
               <div class="achievement card p-2 shadow-sm">
@@ -267,9 +291,6 @@
                   placeholder="Enter Link To The Achievement Certificate"
                 />
               </div>
-              
-                
-              
             </div>
             <a class="mt-2 d-inline-block" id="moreAchievement"
               >+Add Achievement</a
@@ -280,20 +301,23 @@
             <div class="fs-5 mt-3 mb-2">Skills</div>
             <div class="removeSkill">
               <div class="form-check mt-2">
-                <input class="form-check-input me-2" type="checkbox" onclick="removeField(this)">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  onclick="removeField(this)"
+                />
                 If you want to remove this field from your CV, tick the box
               </div>
               <div id="addSkill" class="card p-2 shadow-sm">
-              
-              <div id="skill">
-                <label for="skillName">Skill Name</label>
-                <input
-                  type="text"
-                  class="skillName"
-                  placeholder="Enter Skill Name"
-                />
+                <div id="skill">
+                  <label for="skillName">Skill Name</label>
+                  <input
+                    type="text"
+                    class="skillName"
+                    placeholder="Enter Skill Name"
+                  />
+                </div>
               </div>
-            </div>
             </div>
             <a class="mt-2 d-inline-block" id="moreSkill">+Add Skill</a>
           </div>
@@ -304,7 +328,7 @@
       </form>
     </div>
 
-    <div id="cv" class="container" style="display: none;">
+    <div id="cv" class="container" style="display: none">
       <div class="container-fluid mb-5">
         <div class="row">
           <div class="col-4 bg-light">
@@ -344,36 +368,43 @@
             <hr />
             <div id="cvObject"></div>
             <div class="removeSkill">
-            <div class="navbar-brand fs-4">Skills</div>
-            <hr />
+              <div class="navbar-brand fs-4">Skills</div>
+              <hr />
               <ul id="cvSkill"></ul>
             </div>
             <div class="removeWorkExperience">
-            <div class="navbar-brand fs-4">Experience</div>
-            <hr />
-            <ul id="cvExperience"></ul>
+              <div class="navbar-brand fs-4">Experience</div>
+              <hr />
+              <ul id="cvExperience"></ul>
             </div>
             <div class="removeAcademicQualification">
-            <div class="navbar-brand fs-4">Education</div>
-            <hr />
-            <ul id="cvEducation"></ul>
+              <div class="navbar-brand fs-4">Education</div>
+              <hr />
+              <ul id="cvEducation"></ul>
             </div>
             <div class="removeProject">
-            <div class="navbar-brand fs-4">Projects</div>
-            <hr />
-            <ul id="cvProject"></ul>
+              <div class="navbar-brand fs-4">Projects</div>
+              <hr />
+              <ul id="cvProject"></ul>
             </div>
             <div class="removeAchievement">
-            <div class="navbar-brand fs-4">Achievements</div>
-            <hr />
-            <ul id="cvAchievement"></ul>
+              <div class="navbar-brand fs-4">Achievements</div>
+              <hr />
+              <ul id="cvAchievement"></ul>
             </div>
           </div>
         </div>
       </div>
       <div class="row" id="modifyPrintButton">
-        <div class="col-5 btn btn-primary text-center fw-bold" id="modify">Modify CV</div>
-        <div class="col-5 offset-2 btn btn-primary text-center fw-bold" id="print">Print CV</div>
+        <div class="col-5 btn btn-primary text-center fw-bold" id="modify">
+          Modify CV
+        </div>
+        <div
+          class="col-5 offset-2 btn btn-primary text-center fw-bold"
+          id="print"
+        >
+          Print CV
+        </div>
       </div>
     </div>
   </body>
